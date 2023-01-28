@@ -14,5 +14,8 @@ Made possible by using <a href="https://openweathermap.org/" target="_blank">Ope
    **Languages/Frameworks:** Xamarin.Forms, C# (.NET)<br/><br/>
    **Tools:** Visual Studio, NuGet Package Manager<br/><br/>
    **API:** OpenWeatherMap API<br/><br/>
-   
+
+
+## Note:
+   The OpenWeatherMap API Key is deliberately omitted from the source code.
 
