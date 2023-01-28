@@ -13,6 +13,6 @@ Made possible by using OpenWeatherMap API<br/><br/>
 ## Skills:
    **Languages/Frameworks:** Xamarin.Forms, C# (.NET)<br/><br/>
    **Tools:** Visual Studio, NuGet Package Manager<br/><br/>
-   **API:** <a href="https://openweathermap.org/">OpenWeatherMap API</a><br/><br/>
+   **API:** <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a><br/><br/>
    
 
