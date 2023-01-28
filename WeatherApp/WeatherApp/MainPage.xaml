@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+             x:Class="WeatherApp.MainPage">
+    
+    <StackLayout VerticalOptions="FillAndExpand">
+
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <Style x:Key="WeatherDataLabelStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="24" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                </Style>
+                <Style x:Key="WeatherTextLabelLabelStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="30" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                    <Setter Property="TextColor" Value="#212529" />
+                    <Setter Property="Margin" Value="0, 20, 0, 0" />
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <Frame BackgroundColor="#2196F3" Padding="16, 30, 16, 30" CornerRadius="0">
+            <StackLayout>
+                <Label Text="Weather App By Terence Lee" HorizontalTextAlignment="Center"
+                   TextColor="White" FontSize="26" FontAttributes="Bold"/>
+                
+            </StackLayout>
+            
+        </Frame>
+
+        
+        <!-- Picker (dropdown list) for user to select a location -->
+        
+        <Label HorizontalTextAlignment="Center" FontAttributes="Bold"
+               FontSize="25" TextColor="#212529">Select a Location</Label>
+
+        <Frame BorderColor="#212529" Margin="10, 0, 10, 0" Padding="0">
+            <Grid Margin="10, 0, 10, 0" HeightRequest="50">
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="11*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+
+                <Picker x:Name="locationPicker" SelectedIndex="0" 
+                        FontSize="25" Grid.Row="0" Grid.Column="0"
+                         Grid.ColumnSpan="2" 
+                          SelectedIndexChanged="locationPicker_SelectedIndexChanged"
+                        HorizontalTextAlignment="Center" >
+                    <Picker.Items>
+                        <x:String>Singapore</x:String>
+                        <x:String>Kuala Lumpur</x:String>
+                        <x:String>Bangkok</x:String>
+                        <x:String>Jakarta</x:String>
+                        <x:String>Hanoi</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Image Grid.Row="0" Grid.Column="1" Source="down_arrow.png" />
+
+            </Grid>
+        </Frame>
+
+        
+        <Grid >
+            <!-- Temperature -->
+            
+            <Label Grid.Row="0" Grid.Column="0" 
+                   Style="{StaticResource WeatherTextLabelLabelStyle}">
+                Temperature
+            </Label>
+            <Label x:Name="temperatureLabel" Grid.Row="1" Grid.Column="0" 
+                   Style="{StaticResource WeatherDataLabelStyle}">Loading...</Label>
+
+
+            <!-- Visibility -->
+            <Label Grid.Row="0" Grid.Column="1" 
+                   Style="{StaticResource WeatherTextLabelLabelStyle}">
+                Visibility
+            </Label>
+
+
+            <Label x:Name="visibilityLabel" Grid.Row="1" Grid.Column="1" 
+                   Style="{StaticResource WeatherDataLabelStyle}">Loading...</Label>
+
+
+            <!-- Humidity -->
+            
+            <Label Grid.Row="2" Grid.Column="0" Style="{StaticResource WeatherTextLabelLabelStyle}">
+                Humidity
+            </Label>
+
+            <Label x:Name="humidityLabel" Grid.Row="3" Grid.Column="0" 
+                   Style="{StaticResource WeatherDataLabelStyle}">Loading...</Label>
+
+
+            <!-- Windspeed -->
+            
+            <Label FontSize="30" Grid.Row="2" Grid.Column="1"  Style="{StaticResource WeatherTextLabelLabelStyle}">
+                Windspeed
+            </Label >
+            
+            <Label x:Name="windSpeedLabel" Grid.Row="3" Grid.Column="1"
+                   Style="{StaticResource WeatherDataLabelStyle}">Loading...</Label>
+        </Grid>
+        
+        
+        <!-- Atmospheric Pressure -->
+        <Label FontSize="30" Style="{StaticResource WeatherTextLabelLabelStyle}">
+            Atmospheric Pressure
+        </Label>
+        <Label x:Name="atmosphericPressureLabel" Style="{StaticResource WeatherDataLabelStyle}">Loading...</Label>
+
+
+        <!-- Date and Time Weather Data last updated -->
+        <Label  FontSize="20" FontAttributes="Bold"  TextColor="#212529"
+                 Margin="0, 30, 0, 1" HorizontalTextAlignment="Center">
+            Data Last Updated on
+        </Label>
+        
+        <Label x:Name="dataLastUpdatedOnLabel"  FontSize="20" HorizontalTextAlignment="Center">
+            Loading ...
+        </Label>
+        
+        
+        <!-- Button to refresh weather data -->
+
+        <Button Clicked="refreshButton_Clicked" Margin="0, 30, 0, 0" Padding="30" FontSize="20"
+                FontAttributes="Bold" Text="Click to Refresh Weather Data"
+                BackgroundColor="DarkCyan"  TextColor="White"></Button>
+    </StackLayout>
+
+</ContentPage>
