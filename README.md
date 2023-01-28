@@ -1,6 +1,6 @@
 # Weather App
 
-A simple cross-platform app (Android & iOS) for QR Code Scanning. It also allows the viewing of previously scanned QR Code links.<br/><br/>
+A simple cross-platform app (Android & iOS) for viewing of weather data of several cities.<br/><br/>
 
 **Author:** Terence Lee Xin Jin<br/><br/>
 
