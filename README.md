@@ -19,7 +19,8 @@ https://www.youtube.com/watch?v=7ToPuPJEnFY<br/><br/>
 
 ## Screenshot
 
-![Screenshot_2025-05-30-10-24-06-01_71743fd21fd8b8d65eb7955563794cea](https://github.com/user-attachments/assets/8c01eb1d-4a2a-42e5-9788-46398e864b7c)<br/><br/>
+<img src="https://github.com/user-attachments/assets/8c01eb1d-4a2a-42e5-9788-46398e864b7c" width="400"/><br/><br/>
+
 
 
 
