@@ -1,10 +1,9 @@
 # Weather App
 
-A simple cross-platform app (Android & iOS) for viewing of weather data of several cities.<br/><br/>
+A simple cross-platform app (Android & iOS) for viewing of weather data of several cities.<br/>
+**Author:** Terence Lee Xin Jin<br/>
 
-**Author:** Terence Lee Xin Jin<br/><br/>
-
-**Can view weather data of the following cities:** Singapore, Kuala Lumpur, Bangkok, Jakarta, Hanoi<br/><br/>
+**Can view weather data of the following cities:** Singapore, Kuala Lumpur, Bangkok, Jakarta, Hanoi<br/>
 
 Made possible by using <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a><br/><br/>
 
